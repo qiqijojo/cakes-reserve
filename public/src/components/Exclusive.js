@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-20.
- */
+
 import React, {Component} from 'react';// eslint-disable-line no-unused-vars
 class Exclusive extends Component {
   render() {
@@ -10,8 +8,8 @@ class Exclusive extends Component {
           <h3>见证真爱·分享幸福时光</h3>
           <h4>书写爱情甜蜜</h4>
           <p>.............................................</p>
-          <p>ONLY FOR CAKES为每对恋人打造浪漫的专属空间。</p>
-          <p>每对定制过蛋糕的恋人只要使用ONLY FOR CAKES帐号，</p>
+          <p>JOJO CAKES为每对恋人打造浪漫的专属空间。</p>
+          <p>每对定制过蛋糕的恋人只要使用JOJO CAKES帐号，</p>
           <p>即可进入甜蜜的情侣专属空间。</p>
           <p>在此写下您的真爱宣言，分享甜蜜的婚纱照、生活照，</p>
           <p>并收集来自四面八方好友的祝福见证。</p>

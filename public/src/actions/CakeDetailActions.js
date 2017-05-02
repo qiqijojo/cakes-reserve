@@ -1,6 +1,4 @@
-/**
- * Created by hanyile on 16/8/21.
- */
+
 
 export const LoadCakeDetail = (data)=> {
   return {

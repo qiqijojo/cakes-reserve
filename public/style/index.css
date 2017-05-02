@@ -13,7 +13,7 @@
 .liuxiananshen{
     height: 600px;
 }
-.aaaa{
+.slides-wrap{
     height: 500px;
 }
 .loginands{
@@ -1489,6 +1489,7 @@ form.con input[type="submit"]:hover{
     margin-top: 1em;
 }
 .logo a h3 span {
+    margin-left: 10px;
     font-weight: 400;
     color: #fff;
     font-family: 'Niconne', cursive;
@@ -1514,7 +1515,7 @@ form.con input[type="submit"]:hover{
     background:none;
 }
 .bottom-nav ul li a:hover{
-    color: #fff8c1;
+    color: #1BBC9B;
 }
 ul.bottom-icons li{
     display: block;

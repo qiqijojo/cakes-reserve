@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-23.
- */
+
 import request from 'superagent';
 const validLoginRequestMiddleware = store =>next=>action=> {// eslint-disable-line no-unused-vars
   switch (action.type) {

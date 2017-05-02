@@ -6,6 +6,7 @@ class SlideShow extends Component {
     this.state = {
       imageIndex: 0
     };
+
     this.interval = setInterval(this.next.bind(this), 5000);
   }
 
@@ -18,9 +19,9 @@ class SlideShow extends Component {
 
   }
 
-  componentWillUnmount() {
-    window.clearInterval(this.interval);
-  }
+  // componentWillUnmount() {     //卸载组件,重置相关参数、更新队列以及更新状态
+  //   window.clearInterval(this.interval);
+  // }
 
   next() {
     this.setState({
@@ -33,7 +34,7 @@ class SlideShow extends Component {
     let address = ['image/slideShow/slide.01.jpg', 'image/slideShow/slide.02.jpg', 'image/slideShow/slide.03.jpg', 'image/slideShow/slide.05.jpg', 'image/slideShow/slide.04.jpg'];
     return (
 
-      <div className="aaaa">
+      <div className="slides-wrap">
         <img id="picture_0" src={address[this.state.imageIndex]}/>
         <button id="btn_1" className="glyphicon glyphicon-menu-left" onClick={this.prev.bind(this) }></button>
         <button id="btn_2" className="glyphicon glyphicon-menu-right" onClick={this.next.bind(this) }></button>

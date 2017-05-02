@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-22.
- */
+
 export const SelectedCake = (data)=> {
   // console.log('actions/cakeDetailActions/CAKEDETAIL_LOADED:data:' + data);
   return {

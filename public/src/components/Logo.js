@@ -36,10 +36,10 @@ class Logo extends Component {
                   <li className="lost"><Link to="/contact">订购帮助</Link></li>
                 </ul>
               </div>
-              <ul className="nav navbar-nav" style={{marginLeft:'60px'}}>
-              <li><Link className="loginands" to={path}>{loginstate}</Link></li>
-              <li><Link className="loginands" to="/signup">{signupstate}</Link></li>
-            </ul>
+                <ul className="nav navbar-nav" style={{marginLeft:'60px'}}>
+                  <li><Link className="loginands" to={path}>{loginstate}</Link></li>
+                  <li><Link className="loginands" to="/signup">{signupstate}</Link></li>
+                </ul>
             </div>
           </div>
           <div className="head-bg">

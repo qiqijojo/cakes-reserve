@@ -35,8 +35,8 @@ class SlideShow extends Component {
 
       <div className="aaaa">
         <img id="picture_0" src={address[this.state.imageIndex]}/>
-        <button id="btn_1" className="glyphicon glyphicon-menu-left" onClick={this.prev.bind(this) }>.</button>
-        <button id="btn_2" className="glyphicon glyphicon-menu-right" onClick={this.next.bind(this) }>.</button>
+        <button id="btn_1" className="glyphicon glyphicon-menu-left" onClick={this.prev.bind(this) }></button>
+        <button id="btn_2" className="glyphicon glyphicon-menu-right" onClick={this.next.bind(this) }></button>
       </div>
 
     );

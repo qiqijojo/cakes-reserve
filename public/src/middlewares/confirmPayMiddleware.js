@@ -1,6 +1,4 @@
-/**
- * Created by wt on 16-8-24.
- */
+
 import request from 'superagent';
 import {browserHistory} from 'react-router';
 const confirmPayMiddleware = store => next => action => {// eslint-disable-line no-unused-vars

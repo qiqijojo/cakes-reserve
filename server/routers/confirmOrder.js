@@ -1,6 +1,4 @@
-/**
- * Created by qinqi on 16-8-23.
- */
+
 import express from 'express';
 import Order from '../models/Order';
 

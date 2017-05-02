@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-14.
- */
+
 import express from 'express';
 import Cake from '../models/Cake';
 

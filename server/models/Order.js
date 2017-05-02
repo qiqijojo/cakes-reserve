@@ -1,6 +1,4 @@
-/**
- * Created by qinqi on 16-8-23.
- */
+
 import mongoose from 'mongoose';
 
 const Order = mongoose.model('Order', {

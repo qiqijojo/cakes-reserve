@@ -1,7 +1,4 @@
 
-/**
- * Created by jae on 16-8-14.
- */
 import mongoose from 'mongoose';
 
 const Cake = mongoose.model('Cake', {

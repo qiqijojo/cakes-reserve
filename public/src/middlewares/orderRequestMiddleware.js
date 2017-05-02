@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-22.
- */
+
 import request from 'superagent';
 import { SelectedCake} from '../actions/BuyCakeInfo';
 import {browserHistory} from 'react-router';

@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-13.
- */
+
 import mongoose from 'mongoose';
 // import rawData form './fixture/raw-data';
  

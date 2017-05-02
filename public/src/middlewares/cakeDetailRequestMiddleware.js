@@ -1,6 +1,3 @@
-/**
- * Created by hanyile on 16/8/22.
- */
 
 import request from 'superagent';
 import { LoadCakeDetail } from '../actions/CakeDetailActions';

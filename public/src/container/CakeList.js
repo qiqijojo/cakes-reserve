@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-14.
- */
+
 import { connect } from 'react-redux';
 import Cakes from '../components/Cakes';
 

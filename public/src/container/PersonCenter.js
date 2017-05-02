@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-26.
- */
+
 import { connect } from 'react-redux';
 import Person from '../components/PersonCenter';
 

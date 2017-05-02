@@ -1,6 +1,4 @@
-/**
- * Created by liuru on 16-10-25.
- */
+
 import {connect} from 'react-redux';
 import {collectionById} from '../actions/personalCollection';
 import personalCollection from '../components/personalCollection';

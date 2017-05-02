@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-23.
- */
+
 import {connect} from 'react-redux';
 import MainView from '../components/MainView';
 import {redirectToLogin} from '../actions/validLogin';

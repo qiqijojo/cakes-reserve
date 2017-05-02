@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-23.
- */
+
 const loginusername=(state='',action)=>{
 
   switch (action.type){

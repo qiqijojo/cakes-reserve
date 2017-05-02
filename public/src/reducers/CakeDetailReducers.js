@@ -1,6 +1,4 @@
-/**
- * Created by hanyile on 16/8/19.
- */
+
 
 const cakeDetail = (state = [], action)=> {
   switch (action.type) {

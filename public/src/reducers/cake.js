@@ -1,6 +1,4 @@
-/**
- * Created by jae on 16-8-14.
- */
+
 const cake=(state=[],action)=>{
 
   switch (action.type){

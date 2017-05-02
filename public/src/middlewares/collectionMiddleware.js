@@ -1,6 +1,4 @@
-/**
- * Created by liuru on 16-10-25.
- */
+
 import request from 'superagent';
 import {personalCollection } from '../actions/personalCollection';
 import {browserHistory} from 'react-router';

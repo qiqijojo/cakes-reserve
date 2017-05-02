@@ -1,6 +1,3 @@
-/**
- * Created by hanyile on 16/8/19.
- */
 
 import { connect } from 'react-redux';
 import { InitializeCakeDetail } from '../actions/CakeDetailActions';

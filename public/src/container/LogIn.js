@@ -1,6 +1,4 @@
-/**
- * Created by wt on 16-8-18.
- */
+
 import {connect} from 'react-redux';
 import LogIn from '../components/LogIn';
 import {LoginVaild} from '../actions/login_vaild';

@@ -1,6 +1,4 @@
-/**
- * Created by qinqi on 16-8-23.
- */
+
 import request from 'superagent';
 import {browserHistory} from 'react-router';
 

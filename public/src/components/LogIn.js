@@ -1,6 +1,3 @@
-/**
- * Created by wt on 16-8-18.
- */
 
 import React, {Component} from 'react'; // eslint-disable-line no-unused-vars
 class LogIn extends Component {

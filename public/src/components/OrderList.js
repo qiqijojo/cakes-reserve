@@ -1,6 +1,3 @@
-/**
- * Created by jae on 16-8-22.
- */
 
 import React, {Component} from 'react';// eslint-disable-line no-unused-vars
 class OrderList extends Component {

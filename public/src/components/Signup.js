@@ -1,7 +1,4 @@
-/**
- * Created by jae on 16-8-17.
- */
-/*wang genwang*/
+
 import React, {Component} from 'react'; // eslint-disable-line no-unused-vars
 class SignUp extends Component {
   constructor() {

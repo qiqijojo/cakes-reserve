@@ -8,19 +8,21 @@ class Logo extends Component {
   }
 
   render() {
-    let loginstate;
-    let signupstate;
-    let path;
+    let stateBtn1;
+    let stateBtn2;
+    let statePath;
+    console.log(this.props)
+
     if(this.props.loginusername!==null)
     {
-      loginstate=this.props.loginusername;
-      path='/presoncenter';
-      signupstate='退出';
+      stateBtn1 =this.props.loginusername;
+      statePath='/presoncenter';
+      stateBtn2='退出';
     }
     else{
-      loginstate='登录';
-      path='/login';
-      signupstate='注册';
+      stateBtn1 ='登录';
+      statePath='/login';
+      stateBtn2='注册';
     }
     return (
         <div className="header">
@@ -37,14 +39,14 @@ class Logo extends Component {
                 </ul>
               </div>
                 <ul className="nav navbar-nav" style={{marginLeft:'60px'}}>
-                  <li><Link className="loginands" to={path}>{loginstate}</Link></li>
-                  <li><Link className="loginands" to="/signup">{signupstate}</Link></li>
+                  <li><Link className="loginands" to={statePath}>{stateBtn1}</Link></li>
+                  <li><Link className="loginands" to="/signup">{stateBtn2}</Link></li>
                 </ul>
             </div>
           </div>
           <div className="head-bg">
             <div className="logo three">
-              <a href=""><h1>ONLY <span>FOR </span>CAKES</h1></a>
+              <a href=""><h1><span> JOJO </span> CAKES <span> FOR </span> U</h1></a>
             </div>
           </div>
         </div>

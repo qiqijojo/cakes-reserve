@@ -11,9 +11,9 @@ router.post('/', (req, res, next)=> {
     const username = req.body.username;
     const password = req.body.password;
     const rePassword = req.body.rePassword;
-    /*const rePassword = req.body.rePassword;*/
 
     function checkUsername(username) {
+        // let patt = /^\w/;
         let patt = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+$/;
         return patt.test(username);
     }

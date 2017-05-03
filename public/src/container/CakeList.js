@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import Cakes from '../components/Cakes';
 
 const mapStateToProps = (state) =>{
+  console.log(state);
+
   return state;
 };
-
 const CakeList = connect(mapStateToProps)(Cakes);
 
 export default CakeList;

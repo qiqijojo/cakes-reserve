@@ -4,15 +4,13 @@ import {Link} from 'react-router';
 class Logo extends Component {
 
   componentWillMount(){
-    this.props.aaaaliu();
+    this.props.isLogin();
   }
 
   render() {
     let stateBtn1;
     let stateBtn2;
     let statePath;
-    console.log(this.props)
-
     if(this.props.loginusername!==null)
     {
       stateBtn1 =this.props.loginusername;

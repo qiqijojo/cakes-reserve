@@ -661,8 +661,7 @@ li.lost {
     width: 100%;
     padding: 0;
     background: rgba(247, 247, 247, 0.41);
-    padding:2em;
-    margin: -16px;
+    padding:10px;
     text-align: left;
 }
 

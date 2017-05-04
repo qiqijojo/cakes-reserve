@@ -2,10 +2,12 @@
 import React, {Component} from 'react';// eslint-disable-line no-unused-vars
 import CakeItem from './CakeItem';
 
-class Cake extends Component {
+class Cakes extends Component {
   render() {
+
+    // console.log(this.props.cake)
     const {cake}=this.props;
-    //console.log(this.props.cake);
+
     return (
         <div className="row">
 
@@ -28,4 +30,4 @@ class Cake extends Component {
   }
 }
 
-export default Cake;
+export default Cakes;

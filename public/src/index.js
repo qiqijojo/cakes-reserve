@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import {Router, Route, browserHistory,IndexRoute} from 'react-router';
 import CakeDetailContainer from './container/CakeDetailContainer';
 import OrderListContainer from './container/OrderListContainer';
-import CakesList from './components/CakeList';
+import CakesList from './components/CakesList';
 import Notfound from './components/404';
 import BrandStory from './components/BrandStory';
 import Orderlist from './components/OrderList';

@@ -32,7 +32,7 @@ class CakeDetailComponent extends Component {
                                         <p>蛋糕名称：{name}</p>
                                         <p>蛋糕风味：{style}</p>
                                         <p>蛋糕简介：{intro}</p>
-                                        <p>蛋糕价格：{price}</p>
+                                        <p>蛋糕价格：{price} 元</p>
                                         <p>蛋糕尺寸：{size}</p>
                                         <p>蛋糕心语：{infore}</p>
                                     </div>

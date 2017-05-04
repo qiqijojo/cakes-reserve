@@ -38,12 +38,12 @@ class OrderList extends Component {
                         <div className="about-grid ">
                             <div className="col-md-8 about-text">
                                 <div className="col-md-4 about-img">
-                                    <p>订购的蛋糕信息: </p>
-                                    <div>{order.style}￥：{order.price}</div>
-
+                                    <p>预定的蛋糕信息: </p>
+                                    <div>{order.style}：{order.price} 元</div>
                                     <img src={ '../' + order.image} className="img-responsive zoom-img"></img>
                                 </div>
-                                <h3>   {login},您好, 请填写购买信息:</h3><br/>
+
+                                <h3>   {login},您好, 请完善订单信息:</h3><br/>
 
                                 <form action="#" className="form-horizontal">
                                     <div className="form-group">
@@ -88,7 +88,7 @@ class OrderList extends Component {
                                 <div style={{marginTop: '20px', marginLeft: '800px'}}>
                                     <button type="button"
                                             className="btn btn-info"
-                                            onClick={this.confirm.bind(this)}>确认订单
+                                            onClick={this.confirm.bind(this)}>完成
                                     </button>
                                 </div>
                             </div>

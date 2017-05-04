@@ -14,12 +14,12 @@ let router = express.Router();
 
 //获取蛋糕详情页的URI并返回结果
 router.get('/:id', (req, res) => {
-  Cake.findOne({_id: req.params.id}, (err, cake)=> {
+  Cake.findOne({_id: req.params.id}, (err, cakeInfo)=> {
     if (err) {
       res.status(404).send('error');
     }
     else {
-      res.status(200).send(cake);
+      res.status(200).send(cakeInfo);
     }
   });
 });

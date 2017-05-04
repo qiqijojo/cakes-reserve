@@ -1,7 +1,7 @@
 
 import { connect } from 'react-redux';
 import { InitializeCakeDetail } from '../actions/CakeDetailActions';
-import CakeDetailComponent from '../components/CakeDetailComponents';
+import CakeDetailComponent from '../components/CakeDetailComponent';
 
 const mapStateToProps = (state) => {
   return state;
@@ -9,7 +9,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch)=> ({
   
-  loadPage: (id)=>{
+  cakeDetailPage: (id)=>{
     dispatch(InitializeCakeDetail(id));
   }
 

@@ -8,13 +8,14 @@ class CakeDetailComponent extends Component {
     }
 
     componentDidMount() {
-        this.props.loadPage(this.props.params.id);
+        this.props.cakeDetailPage(this.props.params.id);
     }
 
 
     render() {
-        const {name, image, style, intro, size, price, infore, inforc}  = this.props.CakeDetailReducers;
-        const id = this.props.CakeDetailReducers._id;
+        const {name, image, style, intro, size, price, infore, inforc}  = this.props.cakeDetail;
+        const id = this.props.cakeDetail._id;
+
         return (
             <div>
                 <div className="cakecomcui">
@@ -27,7 +28,7 @@ class CakeDetailComponent extends Component {
                                              title={inforc}/>
                                     </div>
                                     <div style={{marginTop: '20px', marginLeft: '480px'}}>
-                                        <h3 style={{color: '#b0916a'}}>CakeDetail--{style}</h3>
+                                        <h3 style={{color: '#b0916a'}}>cakeDetail -- {style}</h3>
                                         <p>蛋糕名称：{name}</p>
                                         <p>蛋糕风味：{style}</p>
                                         <p>蛋糕简介：{intro}</p>
@@ -37,11 +38,11 @@ class CakeDetailComponent extends Component {
                                     </div>
                                     <div style={{marginTop: '20px', marginLeft: '600px'}}>
                                         <Link to={'/orderlist/' + id}>
-                                            <button className="btn btn-info">立即购买</button>
+                                            <button className="btn btn-info">立即预定</button>
                                         </Link>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <Link to='/personalCollection/'>
-                                        <button className="btn btn-info">点击收藏</button>
+                                            <button className="btn btn-info">点击收藏</button>
                                         </Link>
 
                                     </div>

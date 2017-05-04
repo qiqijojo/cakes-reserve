@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import cake from './cake';
 import order from './order';
-import CakeDetailReducers from './CakeDetailReducers';
+import cakeDetail from './cakeDetail';
 import user from './users';
 import signup from './signUp';
 import orderInfo from './orderInfo';
@@ -12,7 +12,7 @@ import collectionReducer from './collectionReducer';
 
 const cakeList = combineReducers({
   cake,
-  CakeDetailReducers,
+  cakeDetail,
   user,
   signup,
   order,

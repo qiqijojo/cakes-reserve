@@ -1,11 +1,11 @@
 
 import request from 'superagent';
-import { SelectedCake} from '../actions/BuyCakeInfo';
+import { SelectedCake} from '../actions/fillOrderInfo';
 import {browserHistory} from 'react-router';
 
-const orderRequestMiddleware = store =>next=>action=> {// eslint-disable-line no-unused-vars
+const fillOrderInfoRequestMiddleware = store =>next=>action=> {// eslint-disable-line no-unused-vars
   switch (action.type) {
-  case 'ORDERLIST_INIT':
+  case 'CAKE_INFO_LOAD':
     request
         .get(`/api/cakedetail/${action.id}`)
         .end((err, res)=> {
@@ -21,4 +21,4 @@ const orderRequestMiddleware = store =>next=>action=> {// eslint-disable-line no
   next(action);
 };
 
-export default orderRequestMiddleware;
+export default fillOrderInfoRequestMiddleware;

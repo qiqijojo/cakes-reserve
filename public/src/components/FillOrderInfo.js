@@ -3,14 +3,28 @@
  */
 
 import React, { Component } from 'react';
-class CompleteOrderInfo extends Component{
+class FillOrderInfo extends Component{
     constructor(props){
         super(props);
     }
 
-    render() {
+    componentDidMount(){
+        this.props.getOrderCake(this.props.params.id);
+    }
+    confirmOrder(){
+        const order = {};
+        order.realName = this.refs.inputName.value.trim();
+        order.tel = this.refs.inputTel.value.trim();
+        order.address = this.refs.inputAddress.value.trim();
+        order.addition = this.refs.inputMore.value.trim();
 
-        console.log(this.props.params.id)
+        order.cakeName = this.props.order.name;
+
+        console.log(order.cakeName)
+    }
+    render() {
+        let order = this.props.order;
+        let nickName = this.props.loginusername;
 
         return (
             <div className="orderlist">
@@ -20,11 +34,11 @@ class CompleteOrderInfo extends Component{
                             <div className="col-md-8 about-text">
                                 <div className="col-md-4 about-img">
                                     <p>您将预定: </p>
-                                    <div>提拉米苏：100 元</div>
+                                    <div>{order.style}：{order.price} 元</div>
 
-                                    <img src="/image/cakelist/02.jpg" className="img-responsive zoom-img"></img>
+                                    <img src={'/'+order.image} className="img-responsive zoom-img"></img>
                                 </div>
-                                <h3>  王齐,您好, 请完善订单信息:</h3><br/>
+                                <h3>  {nickName},您好, 请完善订单信息:</h3><br/>
 
                                 <form action="#" className="form-horizontal">
                                     <div className="form-group">
@@ -66,10 +80,10 @@ class CompleteOrderInfo extends Component{
 
                                     </div>
                                 </form>
-                                <div style={{marginTop: '20px', marginLeft: '880px'}}>
+                                <div style={{marginTop: '20px', marginLeft: '850px'}}>
                                     <button type="button"
                                             className="btn btn-info"
-                                            >完成
+                                            onClick={this.confirmOrder.bind(this)}>确认预定
                                     </button>
                                 </div>
                             </div>
@@ -80,4 +94,4 @@ class CompleteOrderInfo extends Component{
         )
     }
 }
-export default CompleteOrderInfo;
+export default FillOrderInfo;

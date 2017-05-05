@@ -1,6 +1,6 @@
 
 import { connect } from 'react-redux';
-import {orderlistinit} from '../actions/BuyCakeInfo';
+import {cakeInfoLoad} from '../actions/fillOrderInfo';
 import OrderList from '../components/OrderList';
 import {withRouter} from 'react-router';
 import {confirmOrderAction} from '../actions/cofirmOrderAction';
@@ -12,7 +12,7 @@ const mapDispatchToProps = (dispatch)=> ({
 
   loadorder: (id)=>{
     // console.log('container/cakeDetailContainer/loadPage:id:' + id);
-    dispatch(orderlistinit(id));
+    dispatch(cakeInfoLoad(id));
   },
   confirmOrderFunction: (order)=> {
     dispatch(confirmOrderAction(order));

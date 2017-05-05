@@ -7,10 +7,10 @@ export const SelectedCake = (data)=> {
   };
 };
 
-export const orderlistinit = (id)=> {
-  // console.log('actions/cakeDetailActions/CAKEDETAIl_INITIALIZED:id:' + id);
+export const cakeInfoLoad = (id)=> {
+  // console.log('actions/fillOrderInfo/CAKE_INFO_LOAD:id:' + id);
   return {
-    type: 'ORDERLIST_INIT',
+    type: 'CAKE_INFO_LOAD',
     id
   };
 };

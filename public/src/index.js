@@ -25,7 +25,7 @@ import cakeRequestMiddleware from './middlewares/cakeRequestMiddleware';
 import signUpRequestMiddleware from './middlewares/signUpRequestMiddleware';
 import cakeDetailRequestMiddleware from './middlewares/cakeDetailRequestMiddleware';
 import loginRequestMiddleware from './middlewares/loginRequestMiddleware';
-import orderRequestMiddleware from './middlewares/orderRequestMiddleware';
+import fillOrderInfoRequestMiddleware from './middlewares/fillOrderInfoRequestMiddleware';
 import confirmOrderMiddleware from './middlewares/confirmOrderMiddleware';
 import validLoginRequestMiddleware from './middlewares/validLoginRequestMiddleware';
 import {validLogin} from './actions/validLogin';
@@ -34,13 +34,13 @@ import confirmPayMiddleware from './middlewares/confirmPayMiddleware';
 import personalInfoMiddleware from './middlewares/personalInfoMiddleware';
 import personalCollecMiddleware from './middlewares/collectionMiddleware';
 //完善订单信息页面
-import CompleteOrderInfoContainer from './container/CompleteOrderInfoContainer';
+import FillOrderInfoContainer from './container/FillOrderInfoContainer';
 
 const store = createStore(
     cakeList,
     applyMiddleware(cakeRequestMiddleware, loginRequestMiddleware,
         signUpRequestMiddleware, cakeDetailRequestMiddleware,
-        orderRequestMiddleware,getOrderInfoMiddleware,confirmPayMiddleware
+        fillOrderInfoRequestMiddleware,getOrderInfoMiddleware,confirmPayMiddleware
     ,confirmOrderMiddleware, validLoginRequestMiddleware,personalInfoMiddleware,personalCollecMiddleware)
 );
 
@@ -72,7 +72,7 @@ render(
           <Route path="/404" component={Notfound}/>
           <Route path="/cakedetail/:id" component={CakeDetailContainer} onEnter={validateLogin}/>
           <Route path="/orderlist/:id" component={OrderListContainer} onEnter={validateLogin}/>
-          < Route path="/fillOrderInfo/:id" component={CompleteOrderInfoContainer}/>
+          < Route path="/fillorderInfo/:id" component={FillOrderInfoContainer}/>
         </Route>
       </Router>
     </Provider>,

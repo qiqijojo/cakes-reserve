@@ -19,8 +19,11 @@ class FillOrderInfo extends Component{
         order.addition = this.refs.inputMore.value.trim();
 
         order.cakeName = this.props.order.name;
+        order.image = this.props.order.image;
+        order.price = this.props.order.price;
 
-        console.log(order.cakeName)
+        //该调用container里的dispatch（action）来生成下一个页面（订单详情）
+
     }
     render() {
         let order = this.props.order;

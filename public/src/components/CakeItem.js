@@ -3,7 +3,7 @@ import {Link} from 'react-router';
 class CakeItem extends Component {
 
   render() {
-    let {name, image, style, intro, id} = this.props;
+    let {price, image, style, intro, id} = this.props;
 
     return (
         <div>
@@ -11,8 +11,8 @@ class CakeItem extends Component {
             <Link to={'/cakeDetail/' + id} className="text-center thumbnail mask b-link-stripe b-animate-go swipebox">
               <img src={image} title={intro} className="img-responsive zoom-img" />
             </Link>
-            <div>{name}</div>
             <div>{style}</div>
+            <div>{price} 元</div>
           </div>
         </div>
     );

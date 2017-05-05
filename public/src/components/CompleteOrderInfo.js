@@ -1,13 +1,17 @@
 /**
  * Created by wangqi on 17-5-4.
  */
+
 import React, { Component } from 'react';
 class CompleteOrderInfo extends Component{
     constructor(props){
         super(props);
     }
 
-    render(){
+    render() {
+
+        console.log(this.props.params.id)
+
         return (
             <div className="orderlist">
                 <div className="welcome-section">
@@ -15,12 +19,12 @@ class CompleteOrderInfo extends Component{
                         <div className="about-grid ">
                             <div className="col-md-8 about-text">
                                 <div className="col-md-4 about-img">
-                                    <p>预定的蛋糕信息: </p>
-                                    <div>{order.style}：{order.price} 元</div>
+                                    <p>您将预定: </p>
+                                    <div>提拉米苏：100 元</div>
 
-                                    <img src={ '../' + order.image} className="img-responsive zoom-img"></img>
+                                    <img src="/image/cakelist/02.jpg" className="img-responsive zoom-img"></img>
                                 </div>
-                                <h3>   {login},您好, 请完善订单信息:</h3><br/>
+                                <h3>  王齐,您好, 请完善订单信息:</h3><br/>
 
                                 <form action="#" className="form-horizontal">
                                     <div className="form-group">
@@ -62,16 +66,18 @@ class CompleteOrderInfo extends Component{
 
                                     </div>
                                 </form>
-                                <div style={{marginTop: '20px', marginLeft: '800px'}}>
+                                <div style={{marginTop: '20px', marginLeft: '880px'}}>
                                     <button type="button"
                                             className="btn btn-info"
-                                            onClick={this.confirm.bind(this)}>完成
+                                            >完成
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
         )
     }
 }
+export default CompleteOrderInfo;

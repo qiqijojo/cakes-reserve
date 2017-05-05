@@ -13,6 +13,7 @@ class CakeDetailComponent extends Component {
 
 
     render() {
+
         const {name, image, style, intro, size, price, infore, inforc}  = this.props.cakeDetail;
         const id = this.props.cakeDetail._id;
 
@@ -37,7 +38,7 @@ class CakeDetailComponent extends Component {
                                         <p>蛋糕心语：{infore}</p>
                                     </div>
                                     <div style={{marginTop: '20px', marginLeft: '600px'}}>
-                                        <Link to={'/orderlist/' + id}>
+                                        <Link to={'/fillOrderInfo/' + id}>
                                             <button className="btn btn-info">立即预定</button>
                                         </Link>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

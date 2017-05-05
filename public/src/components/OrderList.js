@@ -38,7 +38,7 @@ class OrderList extends Component {
                         <div className="about-grid ">
                             <div className="col-md-8 about-text">
                                 <div className="col-md-4 about-img">
-                                    <p>预定的蛋糕信息: </p>
+                                    <p>您将预定: </p>
                                     <div>{order.style}：{order.price} 元</div>
                                     <img src={ '../' + order.image} className="img-responsive zoom-img"></img>
                                 </div>
@@ -85,7 +85,7 @@ class OrderList extends Component {
 
                                     </div>
                                 </form>
-                                <div style={{marginTop: '20px', marginLeft: '800px'}}>
+                                <div style={{marginTop: '20px', marginLeft: '880px'}}>
                                     <button type="button"
                                             className="btn btn-info"
                                             onClick={this.confirm.bind(this)}>完成

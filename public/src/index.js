@@ -33,6 +33,8 @@ import getOrderInfoMiddleware from './middlewares/getOrderInfoMiddleware';
 import confirmPayMiddleware from './middlewares/confirmPayMiddleware';
 import personalInfoMiddleware from './middlewares/personalInfoMiddleware';
 import personalCollecMiddleware from './middlewares/collectionMiddleware';
+//完善订单信息页面
+import CompleteOrderInfoContainer from './container/CompleteOrderInfoContainer';
 
 const store = createStore(
     cakeList,
@@ -70,6 +72,7 @@ render(
           <Route path="/404" component={Notfound}/>
           <Route path="/cakedetail/:id" component={CakeDetailContainer} onEnter={validateLogin}/>
           <Route path="/orderlist/:id" component={OrderListContainer} onEnter={validateLogin}/>
+          < Route path="/fillOrderInfo/:id" component={CompleteOrderInfoContainer}/>
         </Route>
       </Router>
     </Provider>,

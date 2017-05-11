@@ -73,7 +73,7 @@ class FillOrderInfo extends Component{
 
 
                                         <div className="col-md-5 col-md-5">
-                                            <label htmlFor="inputEmail3" className="control-label">备注: </label>
+                                            <label htmlFor="inputEmail3" className="control-label">预定数量（单位/个）: </label>
                                             <input type="text"
                                                    className="form-control"
                                                    id="inputEmail3"

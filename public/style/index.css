@@ -5,7 +5,7 @@
     height: 410px;
 }
 .confirmpay{
-    height: 410px;
+    height: 450px;
 }
 .cakedetail{
     height: 400px;
@@ -661,7 +661,7 @@ li.lost {
     width: 100%;
     padding: 0;
     background: rgba(247, 247, 247, 0.41);
-    padding:10px;
+    /*padding:10px;*/
     text-align: left;
 }
 

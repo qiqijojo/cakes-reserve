@@ -46,13 +46,14 @@ class ConfirmPay extends Component {
                                     <p>真实姓名:{name}</p>
                                     <p>联系电话: {tel}</p>
                                     <p>收货地址:{address}</p>
-                                    <p>实付价格:{price}元</p>
-                                    <p>备注信息:{more}</p>
+                                    <p>单价:{price}元</p>
+                                    <p>数量:{more}个</p>
+                                    <p>总价:</p>
 
                                 </div>
                                 <div style={{marginTop: '20px', marginLeft: '800px'}}>
                                     <button onClick={this.readyToPay.bind(this)} type="button" className="btn btn-info">
-                                        确认支付
+                                        确认预定
                                     </button>
 
 

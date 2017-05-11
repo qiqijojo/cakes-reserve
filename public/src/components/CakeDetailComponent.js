@@ -38,7 +38,7 @@ class CakeDetailComponent extends Component {
                                         <p>蛋糕心语：{infore}</p>
                                     </div>
                                     <div style={{marginTop: '20px', marginLeft: '600px'}}>
-                                        <Link to={'/fillOrderInfo/' + id}>
+                                        <Link to={'/orderlist/' + id}>
                                             <button className="btn btn-info">立即预定</button>
                                         </Link>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -2,14 +2,12 @@
 import mongoose from 'mongoose';
 
 const Order = mongoose.model('Order', {
-  username:String,
-  name:String,
+  realName:String,
   tel:String,
   address:String,
-  more:String,
+  num:String,
   cakeName:String,
   image:String,
-  isPay:Boolean,
   price:Number,
 });
 

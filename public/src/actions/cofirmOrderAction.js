@@ -1,5 +1,5 @@
 
-export const confirmOrderAction = (order)=> ({
+export const confirmOrderAction = (info)=> ({
   type: 'CONFIRM_ORDER',
-  order
+  info
 });

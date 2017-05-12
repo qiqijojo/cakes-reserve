@@ -39,8 +39,8 @@ export default {
     name:'Mango Mousse',
     intro:'纯鲜芒果、法国宝茸顶级芒果果蓉、法国铁塔淡奶油',
     style:'芒果慕斯',
-    image:'image/cakelist/04.jpg'
-    ,price:222,
+    image:'image/cakelist/04.jpg',
+    price:222,
     size:'2磅',
     infore:'第一次见到你，我的目光已不由自主的被你占据，我的这颗心将被你征服，当你喊出我的名字时，我知道你是人群中最特别的，现在的我如此渴望能够与你再次相逢。',
     inforc:'You captured my heart and soul at the first sight. When you call my name, I hear the sweetest voice singing the song of nature. I long for another chance to see you and to hear you again.'
@@ -113,14 +113,12 @@ export default {
 
   }],
   Order:[{
-    username:'其实我是黄蓉＿＿嘿嘿嘿',
-    name:'wangting',
-    tel:'110',
-    address:'china',
-    more:'111',
+    realName:'王月',
+    tel:'12345678910',
+    address:'地件间的经济单价的',
+    num:'2',
     cakeName:'f456',
     image:'image/cakelist/02.jpg',
-    isPay:false,
     price:100
   }]
 };

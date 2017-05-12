@@ -2,21 +2,20 @@
 import request from 'superagent';
 import {browserHistory} from 'react-router';
 
-const confirmOrderMiddleware = store =>next=>action=> {// eslint-disable-line no-unused-vars
+const confirmOrderMiddleware
+    = store =>next=>action=> {// eslint-disable-line no-unused-vars
   switch (action.type) {
   case'CONFIRM_ORDER':
     request.post('/api/order')
           .type('form')
           .send({
-            username:action.order.username,
-            name:action.order.name,
-            tel:action.order.tel,
-            address:action.order.address,
-            more:action.order.more,
-            cakeName:action.order.cakeName,
-            image:action.order.image,
-            isPay:action.order.isPay,
-            price:action.order.price,
+            realName:action.info.realName,
+            tel:action.info.tel,
+            address:action.info.address,
+            num:action.info.num,
+            cakeName:action.info.cakeName,
+            image:action.info.image,
+            price:action.info.price,
           })
           .end((err, res)=> {
             next({

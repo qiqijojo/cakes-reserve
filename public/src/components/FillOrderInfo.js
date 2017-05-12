@@ -12,16 +12,17 @@ class FillOrderInfo extends Component{
         this.props.getOrderCake(this.props.params.id);
     }
     confirmOrder(){
-        const order = {};
-        order.realName = this.refs.inputName.value.trim();
-        order.tel = this.refs.inputTel.value.trim();
-        order.address = this.refs.inputAddress.value.trim();
-        order.addition = this.refs.inputMore.value.trim();
+        const info = {};
+        info.realName = this.refs.inputName.value.trim();
+        info.tel = this.refs.inputTel.value.trim();
+        info.address = this.refs.inputAddress.value.trim();
+        info.num = this.refs.inputNum.value;
 
-        order.cakeName = this.props.order.name;
-        order.image = this.props.order.image;
-        order.price = this.props.order.price;
+        info.cakeName = this.props.order.name;
+        info.image = this.props.order.image;
+        info.price = this.props.order.price;
 
+        this.props.submitOrderInfo(info);
         //该调用container里的dispatch（action）来生成下一个页面（订单详情）
 
     }
@@ -77,7 +78,7 @@ class FillOrderInfo extends Component{
                                             <input type="text"
                                                    className="form-control"
                                                    id="inputEmail3"
-                                                   ref="inputMore"
+                                                   ref="inputNum"
                                             />
                                         </div>
 

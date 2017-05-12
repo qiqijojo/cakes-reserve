@@ -26,7 +26,8 @@ class ConfirmPay extends Component {
 
     render() {
         const username = this.props.loginusername;
-        const {_id, name, tel, address, more, cakeName, image, price}=this.props.orderInfo;
+        const {_id, realName, tel, address, num, cakeName, image, price}=this.props.orderInfo;
+        let allPrice = price*parseFloat(num);
         return (
             <div className="confirmpay">
                 <div className="welcome-section">
@@ -43,12 +44,12 @@ class ConfirmPay extends Component {
                                 <div style={{marginLeft: '540px'}}>
                                     <h4>蛋糕名称：{cakeName}</h4>
                                     <p>订单编号:{_id}</p>
-                                    <p>真实姓名:{name}</p>
+                                    <p>真实姓名:{realName}</p>
                                     <p>联系电话: {tel}</p>
                                     <p>收货地址:{address}</p>
                                     <p>单价:{price}元</p>
-                                    <p>数量:{more}个</p>
-                                    <p>总价:</p>
+                                    <p>数量:{num}个</p>
+                                    <p>总价:{allPrice}元（货到付款）</p>
 
                                 </div>
                                 <div style={{marginTop: '20px', marginLeft: '800px'}}>

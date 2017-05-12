@@ -6,14 +6,14 @@ const router = express.Router();
 
 router.post('/',(req, res,next)=> {
   new Order({
-    username:req.body.username,
-    name: req.body.name,
+    // username:req.body.username,
+    realName: req.body.realName,
     tel: req.body.tel,
     address: req.body.address,
-    more: req.body.more,
+    num: req.body.num,
     cakeName:req.body.cakeName,
     image:req.body.image,
-    isPay:req.body.isPay,
+    // isPay:req.body.isPay,
     price:req.body.price
   }).save((err, data) => {
     if (err) {

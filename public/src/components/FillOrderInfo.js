@@ -87,7 +87,7 @@ class FillOrderInfo extends Component{
                                 <div style={{marginTop: '20px', marginLeft: '850px'}}>
                                     <button type="button"
                                             className="btn btn-info"
-                                            onClick={this.confirmOrder.bind(this)}>确认预定
+                                            onClick={this.confirmOrder.bind(this)}>完成
                                     </button>
                                 </div>
                             </div>

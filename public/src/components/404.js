@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react';// eslint-disable-line no-unused-vars
 
-class BrandStory extends Component {
+class Err extends Component {
   render() {
     return (
         <div>
@@ -17,4 +17,4 @@ class BrandStory extends Component {
     );
   }
 }
-export default BrandStory;
+export default Err;

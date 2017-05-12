@@ -13,7 +13,7 @@ const mapDispatchToProps = (dispatch)=> ({
   loadorderinfo: (id) =>{
     dispatch(OrderInfo(id));
   },
-  ConfirmBuy: (id) =>{
+  ConfirmToOrder: (id) =>{
     dispatch(ConfirmPay(id));
   }
 });

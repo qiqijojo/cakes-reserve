@@ -21,7 +21,7 @@ class ConfirmPay extends Component {
          </div>
          <div className="clearfix"> </div>
          </div>*/
-        this.props.ConfirmBuy(this.props.params.id);
+        this.props.ConfirmToOrder(this.props.params.id);
     }
 
     render() {

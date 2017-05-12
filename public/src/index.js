@@ -3,7 +3,7 @@ import {render} from 'react-dom';
 import {Router, Route, browserHistory,IndexRoute} from 'react-router';
 import CakeDetailContainer from './container/CakeDetailContainer';
 import CakesList from './components/CakesList';
-import Notfound from './components/404';
+import Err from './components/404';
 import BrandStory from './components/BrandStory';
 import ConfirmPay from './container/ConfirmPayContainer';
 import PersonalInfo from './container/personalInfo';
@@ -63,11 +63,10 @@ render(
           <Route path="/personalInfo" component={PersonalInfo} onEnter={validateLogin} />
           <Router path="/personalCollection" component={personalCollection} onEnter={validateLogin} />
           <Route path="/exclusive" component={Exclusive} onEnter={validateLogin}/>
-          {/*<Route path="/orderlist" component={Orderlist}/>*/}
           <Route path="/confirmpay/:id" component={ConfirmPay}/>
           <Route path="/signup" component={AddTodo}/>
           <Route path="/contact" component={Contact}/>
-          <Route path="/404" component={Notfound}/>
+          <Route path="/404" component={Err}/>
           <Route path="/cakedetail/:id" component={CakeDetailContainer} />
           < Route path="/fillorderInfo/:id" component={FillOrderInfoContainer} onEnter={validateLogin}/>
         </Route>

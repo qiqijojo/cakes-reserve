@@ -10,8 +10,8 @@ const confirmPayMiddleware = store => next => action => {// eslint-disable-line 
           .send({isPay: true})
           .end((err, res) => {
             if (res.status === 205) {
-              alert('支付成功');
-              browserHistory.push('/');
+              alert('预定成功,正在配送，请稍后!');
+              browserHistory.push('/personCenter');
             }
           });
     break;

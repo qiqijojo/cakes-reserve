@@ -16,7 +16,7 @@ import Contact from './components/Contact';
 import AddTodo from './container/AddTodo';
 import cakeList from './reducers';
 import Exclusive from './components/Exclusive';
-import Presoncenter from './container/PersonCenter';
+import Personcenter from './container/PersonCenter';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import cakeRequestMiddleware from './middlewares/cakeRequestMiddleware';
@@ -57,9 +57,9 @@ render(
           <IndexRoute component={APP}/>
           <Route path="/login" component={Login}/>
           <Route path="/cakelist" component={CakesList}/>
-          <Route path="/brandstory" component={BrandStory}/>
+          {/*<Route path="/brandstory" component={BrandStory}/>*/}
           <Route path="/slideshow" component={Slide}/>
-          <Route path="/presoncenter" component={Presoncenter} onEnter={validateLogin}/>
+          <Route path="/personcenter" component={Personcenter} onEnter={validateLogin}/>
           <Route path="/personalInfo" component={PersonalInfo} onEnter={validateLogin} />
           <Router path="/personalCollection" component={personalCollection} onEnter={validateLogin} />
           <Route path="/exclusive" component={Exclusive} onEnter={validateLogin}/>

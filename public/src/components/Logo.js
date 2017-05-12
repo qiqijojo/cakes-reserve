@@ -14,7 +14,7 @@ class Logo extends Component {
     if(this.props.loginusername!==null)
     {
       stateBtn1 =this.props.loginusername;
-      statePath='/presoncenter';
+      statePath='/personcenter';
       stateBtn2='退出';
     }
     else{
@@ -32,8 +32,8 @@ class Logo extends Component {
                   <li><Link to="/">首&nbsp;&nbsp;页</Link></li>
                   <li><Link to="/cakelist">蛋糕名录</Link></li>
                   <li><Link to="/exclusive">唯依专区</Link></li>
-                  <li><Link to="brandstory">品牌故事</Link></li>
-                  <li className="lost"><Link to="/contact">订购帮助</Link></li>
+                  <li className="/lost"><Link to="/contact">订购帮助</Link></li>
+                  <li><Link to="/personCenter">个人中心</Link></li>
                 </ul>
               </div>
                 <ul className="nav navbar-nav" style={{marginLeft:'60px'}}>

@@ -50,7 +50,6 @@ class ConfirmPay extends Component {
                                     <p>单价:{price}元</p>
                                     <p>数量:{num}个</p>
                                     <p>总价:{allPrice}元（货到付款）</p>
-
                                 </div>
                                 <div style={{marginTop: '20px', marginLeft: '800px'}}>
                                     <button onClick={this.readyToPay.bind(this)} type="button" className="btn btn-info">

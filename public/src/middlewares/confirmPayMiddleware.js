@@ -12,7 +12,7 @@ const confirmPayMiddleware = store => next => action => {// eslint-disable-line 
             if (res.status === 205) {
                 // console.log(res.body)
               // alert('预定成功,正在配送，请稍后!');
-              browserHistory.push('/personCenter');
+              browserHistory.push('/personcenter');
             }
           });
     break;

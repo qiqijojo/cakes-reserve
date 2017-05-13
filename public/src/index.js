@@ -40,7 +40,7 @@ const store = createStore(
     applyMiddleware(cakeRequestMiddleware, loginRequestMiddleware,
         signUpRequestMiddleware, cakeDetailRequestMiddleware,
         fillOrderInfoRequestMiddleware,getOrderInfoMiddleware,confirmPayMiddleware
-    ,confirmOrderMiddleware, validLoginRequestMiddleware,personalInfoMiddleware,personalCollecMiddleware,getAllOrderRequestMiddleware)
+    ,confirmOrderMiddleware, validLoginRequestMiddleware,getAllOrderRequestMiddleware)
 );
 
 store.dispatch({
@@ -61,8 +61,8 @@ render(
           {/*<Route path="/brandstory" component={BrandStory}/>*/}
           <Route path="/slideshow" component={Slide}/>
           <Route path="/personcenter" component={PersonCenter} onEnter={validateLogin}/>
-          <Route path="/personalInfo" component={PersonalInfo} onEnter={validateLogin} />
-          <Router path="/personalCollection" component={personalCollection} onEnter={validateLogin} />
+          {/*<Route path="/personalInfo" component={PersonalInfo} onEnter={validateLogin} />*/}
+          {/*<Router path="/personalCollection" component={personalCollection} onEnter={validateLogin} />*/}
           <Route path="/exclusive" component={Exclusive} onEnter={validateLogin}/>
           <Route path="/confirmpay/:id" component={ConfirmPay}/>
           <Route path="/signup" component={AddTodo}/>

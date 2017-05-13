@@ -33,7 +33,7 @@ class Logo extends Component {
                   <li><Link to="/cakelist">蛋糕名录</Link></li>
                   <li><Link to="/exclusive">唯依专区</Link></li>
                   <li className="/lost"><Link to="/contact">订购帮助</Link></li>
-                  <li><Link to="/personCenter">个人中心</Link></li>
+                  <li><Link to="/personcenter">个人中心</Link></li>
                 </ul>
               </div>
                 <ul className="nav navbar-nav" style={{marginLeft:'60px'}}>

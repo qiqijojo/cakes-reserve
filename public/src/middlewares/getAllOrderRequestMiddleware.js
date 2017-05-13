@@ -4,6 +4,7 @@
 import request from 'superagent';
 
 const allOrderRequest = store => next => action => {
+    console.log(action.type)
 
     switch (action.type) {
         case 'ALLORDER_LOAD':

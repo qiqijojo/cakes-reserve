@@ -22,7 +22,11 @@ router.post('/',(req, res,next)=> {
   });
 });
 
-
+router.get('/',(req,res) => {
+  Order.find((err,data) => {
+    res.send(data);
+  });
+});
 router.get('/:id', (req, res) => {
   Order.findOne({ _id: req.params.id }, (err, data) => {
     res.send(data);

@@ -1,7 +1,7 @@
 
 import { connect } from 'react-redux';
 import Person from '../components/PersonCenter';
-import allOrderLoad from '../actions/Personal_CenterAction';
+import { allOrderLoad } from '../actions/Personal_CenterAction';
 
 const mapStateToProps = (state) =>{
   return state;

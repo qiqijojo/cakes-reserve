@@ -9,6 +9,7 @@ import loginstate from './loginState';
 import loginusername from './userName';
 import personalInfo from './personalReducer';
 import collectionReducer from './collectionReducer';
+import allOrder from './allOrder';
 
 const cakeList = combineReducers({
   cake,
@@ -20,7 +21,8 @@ const cakeList = combineReducers({
   loginusername,
   orderInfo,
   personalInfo,
-  collectionReducer
+  collectionReducer,
+  allOrder
 });
 
 export default cakeList;

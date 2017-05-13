@@ -1,15 +1,14 @@
-
 const orderDetail = (state = {}, action)=> {
-  switch (action.type) {
+    switch (action.type) {
 
-  case 'SELECTED_CAKES_LOADED':
-    return action.data;
+        case 'SELECTED_CAKES_LOADED':
+            return action.data;
 
-  case 'CONFIRMED_ORDER':
-    return action.data;
-  }
+        case 'CONFIRMED_ORDER':
+            return action.data;
+    }
 
-  return state;
+    return state;
 };
 
 export default orderDetail;

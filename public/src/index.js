@@ -16,7 +16,7 @@ import Contact from './components/Contact';
 import AddTodo from './container/AddTodo';
 import cakeList from './reducers';
 import Exclusive from './components/Exclusive';
-import Personcenter from './container/PersonCenter';
+import PersonCenter from './container/PersonCenter';
 import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import cakeRequestMiddleware from './middlewares/cakeRequestMiddleware';
@@ -33,13 +33,14 @@ import personalInfoMiddleware from './middlewares/personalInfoMiddleware';
 import personalCollecMiddleware from './middlewares/collectionMiddleware';
 //完善订单信息页面
 import FillOrderInfoContainer from './container/FillOrderInfoContainer';
+import getAllOrderRequestMiddleware from './middlewares/getAllOrderRequestMiddleware';
 
 const store = createStore(
     cakeList,
     applyMiddleware(cakeRequestMiddleware, loginRequestMiddleware,
         signUpRequestMiddleware, cakeDetailRequestMiddleware,
         fillOrderInfoRequestMiddleware,getOrderInfoMiddleware,confirmPayMiddleware
-    ,confirmOrderMiddleware, validLoginRequestMiddleware,personalInfoMiddleware,personalCollecMiddleware)
+    ,confirmOrderMiddleware, validLoginRequestMiddleware,personalInfoMiddleware,personalCollecMiddleware,getAllOrderRequestMiddleware)
 );
 
 store.dispatch({
@@ -59,7 +60,7 @@ render(
           <Route path="/cakelist" component={CakesList}/>
           {/*<Route path="/brandstory" component={BrandStory}/>*/}
           <Route path="/slideshow" component={Slide}/>
-          <Route path="/personcenter" component={Personcenter} onEnter={validateLogin}/>
+          <Route path="/personcenter" component={PersonCenter} onEnter={validateLogin}/>
           <Route path="/personalInfo" component={PersonalInfo} onEnter={validateLogin} />
           <Router path="/personalCollection" component={personalCollection} onEnter={validateLogin} />
           <Route path="/exclusive" component={Exclusive} onEnter={validateLogin}/>

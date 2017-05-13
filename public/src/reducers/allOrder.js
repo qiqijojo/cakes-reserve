@@ -1,7 +1,7 @@
 /**
  * Created by wangqi on 17-5-13.
  */
-const allOrder = (state={},action) => {
+const allOrder = (state=[],action) => {
     switch(action.type){
         case 'ALLORDER_LOADED':
             return action.data;

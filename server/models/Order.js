@@ -6,6 +6,8 @@ const Order = mongoose.model('Order', {
   tel:String,
   address:String,
   num:String,
+  cakeId:String,
+  styleName:String,
   cakeName:String,
   image:String,
   price:Number,

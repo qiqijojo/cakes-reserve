@@ -18,6 +18,8 @@ class FillOrderInfo extends Component{
         info.address = this.refs.inputAddress.value.trim();
         info.num = this.refs.inputNum.value;
 
+        info.cakeId = this.props.params.id;
+        info.styleName = this.props.order.style;
         info.cakeName = this.props.order.name;
         info.image = this.props.order.image;
         info.price = this.props.order.price;

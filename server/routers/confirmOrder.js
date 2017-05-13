@@ -9,6 +9,8 @@ router.post('/', (req, res, next)=> {
         tel: req.body.tel,
         address: req.body.address,
         num: req.body.num,
+        cakeId:req.body.cakeId,
+        styleName:req.body.styleName,
         cakeName: req.body.cakeName,
         image: req.body.image,
         price: req.body.price

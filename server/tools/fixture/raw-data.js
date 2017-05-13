@@ -117,6 +117,8 @@ export default {
     tel:'12345678910',
     address:'地件间的经济单价的',
     num:'2',
+    cakeId:'de8s87c6v5a9c7v07z6c',
+    styleName:'米拉题素',
     cakeName:'f456',
     image:'image/cakelist/02.jpg',
     price:100

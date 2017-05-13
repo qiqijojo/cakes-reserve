@@ -13,6 +13,8 @@ const confirmOrderMiddleware
             tel:action.info.tel,
             address:action.info.address,
             num:action.info.num,
+            cakeId:action.info.cakeId,
+            styleName:action.info.styleName,
             cakeName:action.info.cakeName,
             image:action.info.image,
             price:action.info.price,

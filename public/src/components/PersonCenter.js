@@ -1,13 +1,17 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router';
+import OrderList from './OrderList';
 
 class Personal extends Component {
    constructor(props){
        super(props);
    }
-
+componentDidMount(){
+    this.props.getAllOrder();
+}
     render() {
-        console.log(this.props)
+        console.log(this.props.allOrder)
+        const { allOrder } = this.props;
         let user = this.props.loginusername;
         return (
             <div >
@@ -28,14 +32,18 @@ class Personal extends Component {
                 </div>
                 <hr />
                 <h2 >我的订单：</h2>
-                <div className="container" style={{marginLeft:'40px'}}>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px',marginBottom:'10px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
+                <div className="row" style={{marginLeft:'40px'}}>
+                    {
+                        allOrder.map((v,k)=>(
+                            <OrderList key={k}
+                                       id={v._id}
+                                       cakeName={v.cakeName}
+                                       image={v.image}
+                                       num={v.num}
+                            />
+                            )
+                        )
+                    }
                 </div>
 
 

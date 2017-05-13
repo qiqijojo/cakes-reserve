@@ -13,7 +13,8 @@ router.post('/', (req, res, next)=> {
         styleName:req.body.styleName,
         cakeName: req.body.cakeName,
         image: req.body.image,
-        price: req.body.price
+        price: req.body.price,
+        time:req.body.time
     }).save((err, data) => {
         if (err) {
             return next(err);

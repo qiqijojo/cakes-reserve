@@ -7,10 +7,9 @@ const confirmPayMiddleware = store => next => action => {// eslint-disable-line 
     request
           .put(`/api/order/${action.id}`)
           .type('form')
-          .send({isPay: true})
           .end((err, res) => {
             if (res.status === 205) {
-              // alert('预定成功,正在配送，请稍后!');
+              alert('预定成功,正在配送，请稍后!');
               browserHistory.push('/personcenter');
             }
           });

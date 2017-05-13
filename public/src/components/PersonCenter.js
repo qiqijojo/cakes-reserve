@@ -10,16 +10,15 @@ componentDidMount(){
     this.props.getAllOrder();
 }
     render() {
-        console.log(this.props.allOrder)
         const { allOrder } = this.props;
         let user = this.props.loginusername;
         return (
             <div >
                 <div className="container">
                     <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
+                        <img src="/image/self.jpg" style={{width:'180px',height:'180px'}}/>
 
-                        <p style={{marginTop:'10px',fontSize:'20px'}}><Link to='/cakelist'>蛋糕名录</Link></p>
+                        <p style={{marginTop:'10px',fontSize:'20px'}}><Link to='/cakelist'>走～去逛逛</Link></p>
                     </div >
                     <div className="col-md-2">
                         用户名:
@@ -31,15 +30,17 @@ componentDidMount(){
                     </div>
                 </div>
                 <hr />
-                <h2 >我的订单：</h2>
+                <h2 >订单足迹：</h2>
                 <div className="row" style={{marginLeft:'40px'}}>
                     {
                         allOrder.map((v,k)=>(
                             <OrderList key={k}
                                        id={v._id}
-                                       cakeName={v.cakeName}
+                                       cakeId={v.cakeId}
+                                       styleName={v.styleName}
                                        image={v.image}
                                        num={v.num}
+                                       time={v.time}
                             />
                             )
                         )

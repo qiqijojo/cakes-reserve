@@ -11,6 +11,7 @@ const Order = mongoose.model('Order', {
   cakeName:String,
   image:String,
   price:Number,
+  time:String
 });
 
 export default Order;

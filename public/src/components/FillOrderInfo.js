@@ -24,6 +24,9 @@ class FillOrderInfo extends Component{
         info.image = this.props.order.image;
         info.price = this.props.order.price;
 
+        let time = new Date();
+        info.time = time.getFullYear()+'-'+(parseInt(time.getMonth())+1)+'-'+time.getDate();
+
         this.props.submitOrderInfo(info);
         //该调用container里的dispatch（action）来生成下一个页面（订单详情）
 

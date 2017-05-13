@@ -18,6 +18,7 @@ const confirmOrderMiddleware
             cakeName:action.info.cakeName,
             image:action.info.image,
             price:action.info.price,
+            time:action.info.time,
           })
           .end((err, res)=> {
             next({

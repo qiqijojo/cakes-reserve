@@ -4,17 +4,7 @@ import React, {Component} from 'react';// eslint-disable-line no-unused-vars
 // import { changeMapCenter } from '../actions'
 // import {withRouter} from 'react-router';
 class Contact extends Component {
-  /* static defaultProps = {
-   center: {lat: 59.938043, lng: 30.337157},
-   zoom: 9,
-   greatPlaceCoords: {lat: 59.724465, lng: 30.080121}
-   };
 
-   shouldComponentUpdate = shouldPureComponentUpdate;*/
-
-  /*constructor(props) {
-   super(props);
-   }*/
   render() {
     return (
 

@@ -34,7 +34,7 @@ class Footer extends Component {
           </div>
           <div className="copy-right">
             <div className="container">
-              <p>Copyright &copy; 2017 All Rights Reserved . Design by Qi.wang ! </p>
+              <p>Copyright &copy; 2017 All Rights Reserved . Design by Qi.wang ! 联系电话：18769710667</p>
             </div>
           </div>
         </div>

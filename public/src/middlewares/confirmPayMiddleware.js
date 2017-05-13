@@ -11,10 +11,7 @@ const confirmPayMiddleware = store => next => action => {// eslint-disable-line 
           .send({isPay: true})
           .end((err, res) => {
             if (res.status === 205) {
-                next({
-                    type:'ORDER_LOADED',
-                    data:res.body
-                });
+                console.log(res.body)
               // alert('预定成功,正在配送，请稍后!');
               browserHistory.push('/personCenter');
             }

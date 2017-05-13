@@ -36,55 +36,6 @@ class Personal extends Component {
                         <p>总价:</p>
                         <p>时间：</p>
                     </div>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
-                    <div className="col-md-2 text-center">
-                        <img src="/image/user.jpg" style={{width:'180px',height:'180px'}}/>
-                        <p>名称:</p>
-                        <p>数量:</p>
-                        <p>总价:</p>
-                        <p>时间：</p>
-                    </div>
                 </div>
 
 

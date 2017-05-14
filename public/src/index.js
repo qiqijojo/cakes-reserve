@@ -13,7 +13,7 @@ import Slide from './components/SlideShow';
 import APP from './components/App';
 import MainView from './container/ValidLogin';
 import Contact from './components/Contact';
-import AddTodo from './container/AddTodo';
+import AddAccount from './container/AddAccount';
 import cakeList from './reducers';
 import Exclusive from './components/Exclusive';
 import PersonCenter from './container/PersonCenter';
@@ -65,7 +65,7 @@ render(
           {/*<Router path="/personalCollection" component={personalCollection} onEnter={validateLogin} />*/}
           <Route path="/exclusive" component={Exclusive} onEnter={validateLogin}/>
           <Route path="/confirmpay/:id" component={ConfirmPay}/>
-          <Route path="/signup" component={AddTodo}/>
+          <Route path="/signup" component={AddAccount}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/404" component={Err}/>
           <Route path="/cakedetail/:id" component={CakeDetailContainer} />

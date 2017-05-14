@@ -44,7 +44,7 @@ router.post('/', (req, res, next)=> {
                     }
                 });
             } else {
-                res.send({error: 'input information error!'});
+                res.send({error: 'input error!'});
             }
         }
     });

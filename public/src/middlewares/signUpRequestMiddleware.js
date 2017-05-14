@@ -2,7 +2,7 @@ import request from 'superagent';
 import {browserHistory} from 'react-router';
 const todoRequestMiddleware = store=> next=> action=> {// eslint-disable-line no-unused-vars
   switch (action.type) {
-  case 'ADD_TODO':
+  case 'ADD_ACCOUNT':
     request.post('/users')
         .type('form')
         .send({
@@ -22,7 +22,12 @@ const todoRequestMiddleware = store=> next=> action=> {// eslint-disable-line no
               type: 'SIGNUP_SUCCESS',
               data: '注册成功！'
             });
-            browserHistory.push('/');
+               let it = confirm('注册成功！快去登录吧！');
+              if(it==true){
+                  browserHistory.push('/login');
+              }else{
+                  browserHistory.push('/signup');
+              }
           }
         });
     break;

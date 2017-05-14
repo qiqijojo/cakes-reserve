@@ -1,15 +1,15 @@
 import { connect } from 'react-redux';
 import SignUp from '../components/Signup';
-import { addTodo } from '../actions/index';
+import { addAccount } from '../actions/index';
 
 const mapStateToProps = (state)=> (state);
 const mapDispatchToProps = (dispatch)=> ({
-  addTodo: (arr)=> {
-    dispatch(addTodo(arr));
+  registerAccount: (arr)=> {
+    dispatch(addAccount(arr));
   }
 });
 
 var connect2 = connect(mapStateToProps, mapDispatchToProps);
-const AddTodo = connect2(SignUp);
+const AddAccount = connect2(SignUp);
 
-export default AddTodo;
+export default AddAccount;

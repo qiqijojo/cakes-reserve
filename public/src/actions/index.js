@@ -1,4 +1,4 @@
-export const addTodo = (text)=> ({
-  type: 'ADD_TODO',
+export const addAccount = (text)=> ({
+  type: 'ADD_ACCOUNT',
   text
 });

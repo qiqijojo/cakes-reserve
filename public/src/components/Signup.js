@@ -15,6 +15,7 @@ class SignUp extends Component {
         let inputp = this.refs.inputPwd.value.trim();
         let inputre = this.refs.rePassword.value.trim();
         arr.push(inputn, inputp, inputre);
+
         if (arr) {
             this.props.registerAccount(arr);
         }
@@ -25,9 +26,10 @@ class SignUp extends Component {
 
     handleKeyPress(e) {
         if (13 !== e.charCode) {
-            return;
+            return ;
         }
-        this.addAccount();
+            this.addAccount();
+
     }
 
     checkEmail() {

@@ -43,8 +43,10 @@ router.post('/', (req, res, next)=> {
                         res.send({data: data});
                     }
                 });
-            } else {
-                res.send({error: 'input error!'});
+            } else if(username===''&&password===''&&rePassword===''){
+                res.send({error: 'Input is empty'});
+            }else{
+                res.send({error: 'Input format error!'});
             }
         }
     });

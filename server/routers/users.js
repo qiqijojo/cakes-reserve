@@ -44,7 +44,7 @@ router.post('/', (req, res, next)=> {
                     }
                 });
             } else if(username===''&&password===''&&rePassword===''){
-                res.send({error: 'Input is empty'});
+                res.send({error: 'Input is empty!'});
             }else{
                 res.send({error: 'Input format error!'});
             }

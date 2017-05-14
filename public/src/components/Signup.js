@@ -14,8 +14,8 @@ class SignUp extends Component {
         let inputn = this.refs.inputName.value.trim();
         let inputp = this.refs.inputPwd.value.trim();
         let inputre = this.refs.rePassword.value.trim();
-        arr.push(inputn, inputp, inputre);
 
+        arr.push(inputn, inputp, inputre);
         if (arr) {
             this.props.registerAccount(arr);
         }

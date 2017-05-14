@@ -21,8 +21,8 @@ app.use('*', (req,res)=>{
   res.sendFile(path.resolve('./public/index.html'));
 });
 
-app.listen(2000, function() {
-  console.log('server started at http://localhost:2000'); // eslint-disable-line no-console
+app.listen(3000, function() {
+  console.log('server started at http://localhost:3000'); // eslint-disable-line no-console
 });
 
 export default app;

@@ -7,8 +7,8 @@ const mapStateToProps = (state) => {
 };
 const mapDispatchToProps = (dispatch)=> {
   return {
-    LogIna: (arr)=> {
-      dispatch(LoginVaild(arr));
+    getCookie: (obj)=> {
+      dispatch(LoginVaild(obj));
     }
   };
 };

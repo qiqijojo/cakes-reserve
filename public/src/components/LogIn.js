@@ -1,12 +1,12 @@
 import React, {Component} from 'react'; // eslint-disable-line no-unused-vars
 class LogIn extends Component {
     doAction() {
-        let arr = {};
+        let obj = {};
         let inputn = this.refs.inputName.value.trim();
         let inputp = this.refs.inputPwd.value.trim();
-        arr.username = inputn;
-        arr.password = inputp;
-        this.props.LogIna(arr);
+        obj.username = inputn;
+        obj.password = inputp;
+        this.props.getCookie(obj);
         this.refs.inputName.value = '';
         this.refs.inputPwd.value = '';
     }

@@ -12,11 +12,11 @@ const loginRequestMiddleware = store =>next=>action=> {// eslint-disable-line no
         })
         .end((err, data)=> {
           if (data.status===201) {
-            browserHistory.push('/personcenter');
             next({
               type: 'Loggin_return',
               username:data.body.data.username
             });
+            browserHistory.push('/personcenter');
           }
           else {
             next({

@@ -13,7 +13,7 @@ const todoRequestMiddleware = store=> next=> action=> {// eslint-disable-line no
         .end((err, res)=> {
           if (res.body.error) {
             next({
-              type: 'SIGNUP_FAIR',
+              type: 'SIGNUP_FAIL',
               data: res.body.error
             });
           }

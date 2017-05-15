@@ -1,7 +1,7 @@
 
 const usersignup = (state = '', action)=> {
   switch (action.type) {
-  case 'SIGNUP_FAIR':
+  case 'SIGNUP_FAIL':
 
     return action.data;
 

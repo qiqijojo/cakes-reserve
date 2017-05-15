@@ -21,7 +21,7 @@ const loginRequestMiddleware = store =>next=>action=> {// eslint-disable-line no
           else {
             next({
               type: 'Loggin_return',
-              username: '登录'
+              username: '无用户'
             });
           }
         });

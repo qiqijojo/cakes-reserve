@@ -4,6 +4,7 @@ class LogIn extends Component {
         let obj = {};
         let inputn = this.refs.inputName.value.trim();
         let inputp = this.refs.inputPwd.value.trim();
+
         obj.username = inputn;
         obj.password = inputp;
         this.props.getCookie(obj);
@@ -17,7 +18,22 @@ class LogIn extends Component {
         }
         this.doAction();
     }
-
+    checkUsername(){
+        let email = this.refs.inputName.value.trim();
+        let patt = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+$/;
+        if (!patt.test(email))
+            this.refs.msg1.innerHTML = 'wrong format';
+        else
+            this.refs.msg1.innerHTML = '';
+    }
+    checkPassword(){
+        let password = this.refs.inputPwd.value.trim();
+        let patt = /^.{6,13}$/;
+        if (!patt.test(password))
+            this.refs.msg2.innerHTML = '6 - 13位字符';
+        else
+            this.refs.msg2.innerHTML = '';
+    }
     render() {
         console.log(this.props)
         // const user = this.props.user;
@@ -37,9 +53,10 @@ class LogIn extends Component {
                                                placeholder="Please input username"
                                                ref="inputName"
                                                onKeyPress={this.handleKeyPress.bind(this)}
+                                               onBlur={this.checkUsername.bind(this)}
                                         />
                                     </div>
-                                    <span className="text-danger col-md-4" id="error_show"></span>
+                                    <span className="text-danger col-md-4" id="error_show" ref="msg1"></span>
                                 </div>
                                 <div className="form-group">
                                     <label htmlFor="inputEmail3"
@@ -51,8 +68,11 @@ class LogIn extends Component {
                                                placeholder="Please input password"
                                                ref="inputPwd"
                                                onKeyPress={this.handleKeyPress.bind(this)}
+                                               onBlur={this.checkPassword.bind(this)}
+
                                         />
                                     </div>
+                                    <span className="text-danger col-md-4" id="error_show" ref="msg2"></span>
                                 </div>
                                 <div className="col-lg-offset-6 col-sm-5">
                                     <button onClick={this.doAction.bind(this)} type="button"

@@ -21,8 +21,10 @@ const loginRequestMiddleware = store =>next=>action=> {// eslint-disable-line no
           else {
             next({
               type: 'Loggin_return',
-              username: '无用户'
+              username: '无此用户'
             });
+            alert('无此用户，请重新登录!')
+
           }
         });
     break;

@@ -14,10 +14,10 @@ describe('get api/order', ()=> {
         name:'5',
         tel:'5',
         address:'5',
-        more:'5',
+        num:'5',
         cakeName:'5',
         image:'image/cakelist/02.jpg',
-        isPay:false,
+        // isPay:false,
         price:100
       })
       .end((err, order)=> {
